@@ -41,13 +41,13 @@ I enjoy building projects and learning new technologies to improve my technical 
 
 # 🛠 Skills
 
-- Power BI
-- SQL
-- Excel
 - HTML
 - CSS
 - Java
-- Python
+- Python ( Numpy , Pandas , Matplotlib)
+- Power BI
+- SQL
+- Excel
 - Data Visualization
 
 ---
