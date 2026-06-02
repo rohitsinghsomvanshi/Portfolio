@@ -4,7 +4,7 @@ Welcome to my personal portfolio website 🚀
 This portfolio showcases my education, projects, skills, certifications, and interests.
 
 🔗 Live Portfolio:  
-:contentReference[oaicite:0]{index=0}
+
 
 ---
 
