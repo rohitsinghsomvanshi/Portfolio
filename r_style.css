@@ -1,0 +1,211 @@
+@page { size: A4; margin: 12mm 14mm; }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #d5d5d5;
+    background: #eef0f5;
+    line-height: 1.5;
+  }
+
+  .page {
+    width: 794px;
+    min-height: 1123px;
+    margin: 24px auto;
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  /* ── TOP HEADER ── */
+  .header {
+    background: #6c5e72;
+    padding: 28px 36px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .header-left { flex: 1; }
+
+  .name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    word-spacing: 1%;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .tagline {
+    font-size: 15px;
+    color: hsl(211, 39%, 60%);
+    font: weight px;
+    max-width: 380px;
+    line-height: 1.5;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    flex-shrink: 10px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 300px;
+  }
+
+  .contact-item svg { width: 12px; height: 12px; fill: #d3d5e4; flex-shrink: 0; }
+
+  .contact-item a { color: #c5cbdf; text-decoration: none; }
+
+  /* ── BODY GRID ── */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 256px;
+    gap: 0;
+  }
+
+  .main { padding: 28px 28px 32px 36px; border-right: 1px solid #edf0f7; }
+  .sidebar { padding: 28px 28px 32px 24px; background: #f8f9fc; }
+
+  /* ── SECTION HEADERS ── */
+  .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #3d5afe;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid #3d5afe22;
+  }
+
+  .section { margin-bottom: 20px; }
+
+  /* ── EDUCATION ── */
+  .edu-item { margin-bottom: 12px; }
+  .edu-title { font-size: 15px; font-weight: 600; color: #000000; }
+  .edu-org { font-size: 13px; color: #4a5080; margin-top: 1px; }
+  .edu-meta { font-size: 13px; color: #8890b0; margin-top: 2px; display: flex; gap: 12px; }
+
+  /* ── PROJECTS ── */
+  .project-item { margin-bottom: 14px; }
+  .project-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .project-name { font-size: 15px; font-weight: 600; color: #000000; }
+  .project-link { font-size: 10.5px; color: #5151f0; text-decoration: none; font-weight: 400; flex-shrink: 0; }
+  .project-link:hover { text-decoration: underline; }
+
+  .project-tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 5px 0 6px; }
+  .tag {
+    font-size: 13px;
+    background: #eef0fb;
+    color: #38393f;
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  .project-desc { font-size: 13px; color: #000000; line-height: 1.55; }
+
+  /* ── sumry ── */
+    .sumry{
+      font-size: 12.9px;
+      font-weight: 200;
+      color: black;
+      margin-top: -10px;
+    }
+  /* ── SIDEBAR CERTS ── */
+  .cert-item { margin-bottom: 10px; }
+  .cert-name { font-size: 15px; font-weight: 500; color: #1a1a2e; line-height: 1.4; }
+  .cert-org { font-size: 13px; color: #8890b0; margin-top: 2px; }
+
+  /* ── DIVIDER ── */
+  .divider { border: none; border-top: 1px solid #edf0f7; margin: 2px 0 16px; }
+
+ @media print {
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .header {
+    background: #1a1a2e !important;
+    color: white !important;
+  }
+
+  .name {
+    color: white !important;
+  }
+
+  .tagline {
+    color: #cbd5f5 !important;
+  }
+
+  .contact-item {
+    color: #cbd5f5 !important;
+  }
+
+  .contact-item svg {
+    fill: #cbd5f5 !important;
+  }
+}
+  /* SKILL SECTION */
+.skill-group {
+    margin-bottom: 12px;
+}
+
+.skill-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3d5afe;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+/* CHIP STYLE */
+.chip {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 4px 5px 4px 0;
+    border-radius: 15px;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+/* COLOR VARIANTS */
+.dark {
+    background: #2f355b;
+    color: white;
+}
+
+.light {
+    background: #e6e6e6;
+    color: #333;
+}
+
+.purple {
+    background: #dcdcf5;
+    color: #3a3f9f;
+}
+
+.green {
+    background: #d9f0e4;
+    color: #1b7f5c;
+}
