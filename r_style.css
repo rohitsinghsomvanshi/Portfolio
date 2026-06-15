@@ -5,28 +5,33 @@
   body {
     font-family: 'DM Sans', sans-serif;
     font-size: 13px;
-    color: #d5d5d5;
+    color: #ffffff;
     background: #eef0f5;
     line-height: 1.5;
+   
   }
 
   .page {
     width: 794px;
-    min-height: 1123px;
-    margin: 24px auto;
+    min-height: 1200px;
+    margin: 0px auto;
     background: #fff;
     display: grid;
     grid-template-rows: auto 1fr;
+    border: 2px solid rgb(0, 0, 0);
+    
   }
+ 
 
   /* ── TOP HEADER ── */
   .header {
-    background: #6c5e72;
-    padding: 28px 36px 24px;
+    background: #ffffff;
+    padding: 15px 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 24px;
+    border-bottom: 2px solid black;
   }
 
   .header-left { flex: 1; }
@@ -36,7 +41,7 @@
     font-weight: bold;
     
     font-size: 40px;
-    color: #ffffff;
+    color: #000000;
     letter-spacing: 3px;
     word-spacing: 1%;
     line-height: 1;
@@ -46,10 +51,11 @@
 
   .tagline {
     font-size: 15px;
-    color: hsl(211, 39%, 60%);
+    color: hsl(265, 100%, 50%);
     font: weight px;
     max-width: 380px;
     line-height: 1.5;
+    
   }
 
   .contact-grid {
@@ -58,6 +64,7 @@
     gap: 5px;
     align-items: flex-end;
     flex-shrink: 10px;
+    
   }
 
   .contact-item {
@@ -65,13 +72,13 @@
     align-items: center;
     gap: 9px;
     font-size: 12px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 300px;
   }
 
-  .contact-item svg { width: 12px; height: 12px; fill: #d3d5e4; flex-shrink: 0; }
+  .contact-item svg { width: 12px; height: 12px; fill: #000000; flex-shrink: 0; }
 
-  .contact-item a { color: #c5cbdf; text-decoration: none; }
+  .contact-item a { color: #0039f4; text-decoration: none; }
 
   /* ── BODY GRID ── */
   .body {
@@ -80,19 +87,20 @@
     gap: 0;
   }
 
-  .main { padding: 28px 28px 32px 36px; border-right: 1px solid #edf0f7; }
-  .sidebar { padding: 28px 28px 32px 24px; background: #f8f9fc; }
+  .main { padding: 10px 15px ; border-right: 1px solid #edf0f7; }
+  .sidebar { padding: 10px 15px ; background: #f8f9fc; }
 
   /* ── SECTION HEADERS ── */
   .section-title {
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: 1.8px;
+    letter-spacing: ;
     text-transform: uppercase;
     color: #3d5afe;
     margin-bottom: 12px;
     padding-bottom: 5px;
-    border-bottom: 1.5px solid #3d5afe22;
+    border-bottom: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .section { margin-bottom: 20px; }
@@ -145,24 +153,24 @@
   }
 
   .header {
-    background: #1a1a2e !important;
-    color: white !important;
+    background: #f6f6f6 !important;
+    color: rgb(255, 255, 255) !important;
   }
 
   .name {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
   }
 
   .tagline {
-    color: #cbd5f5 !important;
+    color: #003cff !important;
   }
 
   .contact-item {
-    color: #cbd5f5 !important;
+    color: #000000 !important;
   }
 
   .contact-item svg {
-    fill: #cbd5f5 !important;
+    fill:blue !important;
   }
 }
   /* SKILL SECTION */
